@@ -13,7 +13,8 @@ ticker = 'GOOGL'
 
 tickerData = yf.Ticker(ticker)
 
-tickerPriceHistory = tickerData.history(period='1d' , start='2018-5-31', end='2022-5-31' )
+tickerPriceHistory = tickerData.history(
+    period='1d', start='2018-5-31', end='2022-5-31')
 # Open	High	Low	Close	Volume	Dividends	Stock Splits
 
 st.write("""
@@ -24,4 +25,3 @@ st.write("""
      Sales volume
 """)
 st.line_chart(tickerPriceHistory.Volume)
-

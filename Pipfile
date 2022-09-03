@@ -9,6 +9,9 @@ yfinance = "*"
 pandas = "*"
 pillow = "*"
 altair = "*"
+plotly = "*"
+wordcloud = "*"
+matplotlib = "*"
 
 [dev-packages]
 autopep8 = "*"
